@@ -51,7 +51,7 @@ cursor-theme='Bibata-Modern-Ice'
 font-name='Sans 11'
 gtk-theme='Arc-Dark'
 icon-theme='a-candy-beauty-icon-theme'
-text-scaling-factor=1.0
+text-scaling-factor=1.1000000000000001
 toolkit-accessibility=false
 
 [desktop/keybindings]
