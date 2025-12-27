@@ -42,9 +42,6 @@ mod1 = "alt"
 mod2 = "control"
 home = os.path.expanduser('~')
 myTerm = "kitty"
-myBrowser = "firefox"
-myFileExplorer = "thunar"
-
 
 
 @lazy.function
@@ -197,7 +194,7 @@ group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
 # FOR AZERTY KEYBOARDS
 #group_names = ["ampersand", "eacute", "quotedbl", "apostrophe", "parenleft", "section", "egrave", "exclam", "ccedilla", "agrave",]
 
-group_labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
+group_labels = ["1 ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "0",]
 #group_labels = ["", "", "", "", "", "", "", "", "", "",]
 #group_labels = ["Web", "Edit/chat", "Image", "Gimp", "Meld", "Video", "Vb", "Files", "Mail", "Music",]
 
@@ -281,18 +278,18 @@ widget_defaults = init_widgets_defaults()
 def init_widgets_list():
     prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
     widgets_list = [
-               widget.GroupBox(font="Noto Sans",
-                        fontsize = 13,
+               widget.GroupBox(font="FontAwesome",
+                        fontsize = 14,
                         #margin_y = -1,
-                        margin_x = 0,
-                        padding_y = 6,
-                        padding_x = 5,
-                        borderwidth = 0,
+                        #margin_x = 0,
+                        #padding_y = 6,
+                        #padding_x = 5,
+                        #borderwidth = 0,
                         disable_drag = True,
-                        #active = colors[9],
+                        active = colors[9],
                         inactive = colors[5],
-                        rounded = True,
-                        highlight_method = "block",
+                        rounded = False,
+                        highlight_method = "text",
                         this_current_screen_border = colors[8],
                         foreground = colors[2],
                         background = colors[1]
@@ -304,9 +301,7 @@ def init_widgets_list():
                         background = colors[1]
                         ),
                widget.CurrentLayout(
-                        font = "Noto Sans",
-                        mode = "icon",
-                        scale = 0.5,
+                        font = "Noto Sans Bold",
                         foreground = colors[5],
                         background = colors[1]
                         ),
